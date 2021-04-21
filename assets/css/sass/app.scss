@@ -1,0 +1,97 @@
+@import 'variables';
+@import 'mixins';
+@import 'app-menu-header';
+@import 'app-sidebar-new';
+/* @import 'app-sidebar';*/
+
+
+
+html {
+    @include box-sizing(border-box);
+    height: 100vh;
+}
+*, 
+*:after, 
+*:before {
+    @include box-sizing(inherit);
+}
+
+body {
+  font-family: $fuentePrincipal;
+  height: 100vh;
+}
+#__nuxt, #__layout{
+  height: 100vh;
+}
+img {
+  max-width: 100%;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.oculto {
+  display: none;
+}
+
+.no-menu.pagina {
+  .sidebar {
+      margin-left: -17rem;
+  }
+}
+
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  .nombre-sitio {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      flex: 0 0 5rem;
+      background-color: $Color_Principal;
+      
+      @include desktop {
+        flex: 0 0 15rem;
+      }
+
+      h1 {
+        color: $blanco;
+        margin: 0;
+      }
+
+      .escritorio {
+          display: none;
+          @include desktop {
+            display: block;
+          }
+      }
+
+      .movil {
+        @include desktop {
+          display: none;
+        }
+      }
+    
+  }
+}
+
+ 
+.container-principal {
+  display: flex;
+}
+
+ 
+.contenido {
+  flex:1;
+  margin-left: 13rem;
+  margin-top: 3.7rem;
+  padding: 2rem;
+}
