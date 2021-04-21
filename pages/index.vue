@@ -3,7 +3,7 @@
 
     <header class="w-full h-full bg-center bg-cover opacity-100" 
             style="background-image: url('/images/login/background-login.jpg');">
-            <h1 class="mt-12 font-bold tracking-wide text-center text-white text-8xl">DRAKO - AUTOREPUESTOS</h1>
+            <h1 class="mt-12 font-bold tracking-wide text-center text-white text-8xl">DRAKO - AUTOPARTES</h1>
       
         <div class="px-40 py-2 content">
             <div class="mx-8 mt-20 body">
@@ -43,7 +43,7 @@
 
                                 <div class="flex items-center justify-between mt-3">
                                   
-                                    <nuxt-link to="/erp/users/password-reset" class="text-gray-600"> 
+                                    <nuxt-link to="/" class="text-gray-600" disabled="disabled"> 
                                             Olvidé mi contraseña ? 
                                     </nuxt-link>
 
