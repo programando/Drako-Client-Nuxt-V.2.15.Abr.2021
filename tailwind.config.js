@@ -1,19 +1,24 @@
- // tailwind.config.js
-  module.exports = {
-   purge: [],
-   purge: [
-     './components/**/*.{vue,js}',
-     './layouts/**/*.vue',
-     './pages/**/*.vue',
-     './plugins/**/*.{js,ts}',
-     './nuxt.config.{js,ts}',
-   ],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-      extend: {},
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+ 
+  content: [],
+  theme: {
+    extend: {
+      colors: {
+        extra       : '#0f3057',
+        inputsBorder: '#3b82f6',
+        primary     : '#427053',
+        secondary: '#ce550a',
+        tableHeader:'#ce550a'
+  
+      },
+
+      fontFamily: {
+        rale: 'Raleway',
+        robo: 'Roboto',
+        latos: 'Lato'
+      }
     },
-    variants: {
-      extend: {},
-    },
-    plugins: [],
-  }
+  },
+  plugins: [],
+}
