@@ -96,23 +96,7 @@
 
    methods: {
       login() {
-          this.$router.replace({ path: '/facturas/listado' });
-          
-       /*  this.$refs.ButtonLoading.startLoading();
-         User.login( this.form)
-        .then (response => {
-            this.$store.commit('SET_USER', response.data);
-            this.$router.replace({ path: '/facturas/listado' });
-            this.buttonIsDisabled = true;
-            this.$refs.ButtonLoading.stopLoading();
-        })
-        .catch( error => {
-          if ( error.response.status == 422) {
-            this.errors = error.response.data.errors;  
-            this.$refs.ButtonLoading.stopLoading(); 
-          }
-        }) */
-       
+          this.$router.replace({ path: '/clientes' });       
       },
 
       clearErrors() {
