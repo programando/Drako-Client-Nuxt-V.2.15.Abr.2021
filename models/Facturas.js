@@ -17,4 +17,5 @@ export default {
   async downloadFiles(IdFactura, filetype) {
     return Api.get(`invoices/download/${filetype}/${IdFactura}`);
   }
+  /* Comentario para actualizar*/
 }
