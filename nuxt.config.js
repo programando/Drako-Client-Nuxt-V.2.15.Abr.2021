@@ -17,7 +17,7 @@ export default {
     ]
   },
  server: {
-    port: 3001 // por defecto: 3000
+    port: 3003 // por defecto: 3000
   },
      env: {
       APP_NAME   : process.env.APP_NAME,
